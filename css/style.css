@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #333;
+    font-size: 1.6rem;
+    color: #FFF;
+}
+
+.hide {
+    display: none;
+}
+
+.color-palette {
+    cursor: crosshair;
+}
+
+#slate{
+    display: block;
+    margin: 50px auto;
+}
+
+.newSlate {
+    background-color: #FFF;
+    
+}
+
+.divider {
+    height: 3px;
+    width: 90%;
+    background-color: #FFF;
+    margin: 10px auto;
+}
+
+.pen-color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.black {
+    background-color: black;
+}
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.blue {
+    background-color: blue;
+}
+.purple {
+    background-color: purple;
+}
+.yellow {
+    background-color: yellow;
+}
+.maroon {
+    background-color: #800000;
+}
+.white {
+    background-color: #fff;
+}
+
+.pen-size i {
+    /* width: 3rem;
+    height: 3rem; */
+    padding: 6px;
+}
+
+.thin {
+    font-size: 1.6rem;
+}
+
+.normal {
+    font-size: 2.3rem;
+}
+
+.thick {
+    font-size: 3rem;
+}

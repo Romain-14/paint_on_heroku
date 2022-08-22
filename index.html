@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PAINT</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
+        <!-- JQUERY -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+        <header>
+            <h1>ZE PAINTER</h1>
+        </header>
+
+        <main>
+            <section>
+                <aside>
+                    <form>
+                        <select name="draw" id="draw">
+                            <option value="new">new</option>
+                            <optgroup label="manga">
+                                <option value="goku">Goku</option>
+                                <option value="gohan">Gohan</option>
+                            </optgroup>
+                            <optgroup label="fruit">
+                                <option value="apple">Apple</option>
+                                <option value="cherry">Cherry</option>
+                            </optgroup>
+                        </select>
+                        
+                    </form>
+                </aside>
+
+                <canvas id="slate" class="newSlate" width="640" height="480">VOTRE IE NE SUPPORTE PAS CANVAS, TOO BAD 4 U</canvas>
+                
+                <!-- canvas gradient color -->
+                <canvas id="color-palette" class="color-palette hide" width="256" height="256"></canvas>
+                
+            </section>
+
+            <div class="divider"></div>
+            
+            <aside id="toolbar">
+                
+                <section>
+                    <h2>Tools</h2>
+                    <button id="tool-clear-slate" title="clear slate"><i class="fa-solid fa-eraser"></i></button>
+                    <button id="tool-color-picker" title="pick color"><i class="fa-solid fa-eye-dropper"></i></button>
+                </section>
+                
+                <div class="divider"></div>
+                
+                <section>
+                    <h2>Colors</h2>
+                    <button class="pen-color black" data-color="#000" title="black"></button>
+                    <button class="pen-color red" data-color="#ff0000" title="red"></button>
+                    <button class="pen-color green" data-color="#00ff00" title="green"></button>
+                    <button class="pen-color blue" data-color="#0000ff" title="blue"></button>
+                    <button class="pen-color purple" data-color="#d400ff" title="purple"></button>
+                    <button class="pen-color yellow" data-color="#ffff00" title="yellow"></button>
+                    <button class="pen-color maroon" data-color="#800000" title="maroon"></button>
+                    <button class="pen-color white" data-color="#FFF" title="white"></button>
+                </section>
+                
+                <div class="divider"></div>
+
+                <section>
+                    <h2>thickness</h2>
+                    <button class="pen-size thin" data-size="1"><i class="fa-solid fa-lines-leaning"></i></button>
+                    <button class="pen-size normal" data-size="3"><i class="fa-solid fa-lines-leaning"></i></button>
+                    <button class="pen-size thick" data-size="5"><i class="fa-solid fa-lines-leaning"></i></button>
+                </section>
+                
+            </aside>
+
+        </main>
+
+
+        <!-- créer directement : canvas, les outils, couleurs, épaisseur -->
+        <footer>
+            <p>copyright dev@ro 2022</p>
+        </footer>
+
+        <script type="module" src="js/main.js"></script>
+    </body>
+</html>
